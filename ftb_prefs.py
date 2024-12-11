@@ -24,7 +24,7 @@ class FTBPreferences(bpy.types.AddonPreferences):
     skip_override_cleanup: bpy.props.BoolProperty(
         name="Skip Index Override Cleanup (not recommended)",
         description="If enabled, the addon will not automatically remove overrides of active_material_index (not recommended)",
-        default=False)
+        default=True)
 
     hide_fritzi_shader_warning: bpy.props.BoolProperty(
         name="Hide Missing Prop Shader Warning",
@@ -58,7 +58,7 @@ class FTBPreferences(bpy.types.AddonPreferences):
         description=(
             "If enabled, a popup dialog is shown every time a blend file is loaded while \"Override Auto Resync\""
             "is disabled"),
-        default=True)
+        default=False)
 
     hide_render_preset_manager: bpy.props.BoolProperty(
         name="Hide Render Preset Manager",

@@ -14,9 +14,9 @@ def draw_op(self, context):
 
 def register():
     bpy.types.NLA_MT_context_menu.append(draw_op)
-    bpy.types.NLA_MT_edit.append(draw_op)
+    bpy.types.NLA_MT_strips.append(draw_op)
 
 
 def unregister():
-    bpy.types.NLA_MT_edit.remove(draw_op)
+    bpy.types.NLA_MT_strips.remove(draw_op)
     bpy.types.NLA_MT_context_menu.remove(draw_op)
